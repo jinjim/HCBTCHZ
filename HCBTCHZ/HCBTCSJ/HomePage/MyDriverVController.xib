@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyDriverVController">
+            <connections>
+                <outlet property="addDriver" destination="48y-Fu-hQM" id="pij-t3-qqj"/>
+                <outlet property="historyDriver" destination="fTl-gU-SGy" id="Kqh-FD-CNS"/>
+                <outlet property="menuView" destination="9KL-V9-hR2" id="T6f-lm-2tk"/>
+                <outlet property="tableView" destination="yIT-di-ffD" id="ryY-a3-2X6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="yIT-di-ffD">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yIT-di-ffD" secondAttribute="bottom" id="XtL-RF-X6M"/>
+                <constraint firstAttribute="trailing" secondItem="yIT-di-ffD" secondAttribute="trailing" id="bLX-Z1-NVb"/>
+                <constraint firstItem="yIT-di-ffD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eGI-GH-PhO"/>
+                <constraint firstItem="yIT-di-ffD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="syV-RR-JEh"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="361" y="416"/>
+        </view>
+        <view alpha="0.80000000000000004" contentMode="scaleToFill" id="9KL-V9-hR2">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZO-3b-YU4">
+                    <rect key="frame" x="192" y="15" width="120" height="72"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48y-Fu-hQM">
+                            <rect key="frame" x="0.0" y="0.0" width="120" height="35"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加司机" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lty-L2-Ib1">
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="35"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Lty-L2-Ib1" secondAttribute="bottom" id="2br-1M-pxk"/>
+                                <constraint firstAttribute="height" constant="35" id="9M3-6U-I5C"/>
+                                <constraint firstAttribute="trailing" secondItem="Lty-L2-Ib1" secondAttribute="trailing" id="VQc-n7-RkC"/>
+                                <constraint firstItem="Lty-L2-Ib1" firstAttribute="leading" secondItem="48y-Fu-hQM" secondAttribute="leading" id="jMy-sS-PE7"/>
+                                <constraint firstItem="Lty-L2-Ib1" firstAttribute="top" secondItem="48y-Fu-hQM" secondAttribute="top" id="rNJ-Pb-E9X"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTl-gU-SGy">
+                            <rect key="frame" x="0.0" y="36" width="120" height="35"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="历史司机" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5u-IB-W2V">
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="35"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="M5u-IB-W2V" firstAttribute="top" secondItem="fTl-gU-SGy" secondAttribute="top" id="2pU-oN-0U0"/>
+                                <constraint firstAttribute="trailing" secondItem="M5u-IB-W2V" secondAttribute="trailing" id="C6W-Kr-GsC"/>
+                                <constraint firstAttribute="bottom" secondItem="M5u-IB-W2V" secondAttribute="bottom" id="LOT-Xu-vOp"/>
+                                <constraint firstItem="M5u-IB-W2V" firstAttribute="leading" secondItem="fTl-gU-SGy" secondAttribute="leading" id="gMf-8F-UfT"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="48y-Fu-hQM" firstAttribute="leading" secondItem="iZO-3b-YU4" secondAttribute="leading" id="8MQ-v5-FnR"/>
+                        <constraint firstAttribute="height" constant="72" id="GqD-pk-2pY"/>
+                        <constraint firstItem="fTl-gU-SGy" firstAttribute="top" secondItem="48y-Fu-hQM" secondAttribute="bottom" constant="1" id="LR6-qr-psB"/>
+                        <constraint firstAttribute="trailing" secondItem="fTl-gU-SGy" secondAttribute="trailing" id="MWQ-o1-UCS"/>
+                        <constraint firstItem="48y-Fu-hQM" firstAttribute="top" secondItem="iZO-3b-YU4" secondAttribute="top" id="NYO-jH-d4v"/>
+                        <constraint firstItem="fTl-gU-SGy" firstAttribute="leading" secondItem="iZO-3b-YU4" secondAttribute="leading" id="XYW-A8-MvN"/>
+                        <constraint firstItem="fTl-gU-SGy" firstAttribute="top" secondItem="48y-Fu-hQM" secondAttribute="bottom" constant="1" id="eO0-Rt-5Hp"/>
+                        <constraint firstAttribute="width" constant="120" id="eu7-cg-scL"/>
+                        <constraint firstAttribute="trailing" secondItem="48y-Fu-hQM" secondAttribute="trailing" id="fko-rj-CNl"/>
+                        <constraint firstAttribute="bottom" secondItem="fTl-gU-SGy" secondAttribute="bottom" constant="1" id="vHV-Yx-QBO"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup_triangle" translatesAutoresizingMaskIntoConstraints="NO" id="JLu-EY-vtI">
+                    <rect key="frame" x="284" y="0.0" width="20" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="cNQ-La-YQH"/>
+                        <constraint firstAttribute="width" constant="20" id="lna-CF-ZOn"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="iZO-3b-YU4" firstAttribute="top" secondItem="JLu-EY-vtI" secondAttribute="bottom" id="bS2-ZR-dHV"/>
+                <constraint firstAttribute="trailing" secondItem="JLu-EY-vtI" secondAttribute="trailing" constant="16" id="flx-k3-o8h"/>
+                <constraint firstAttribute="trailing" secondItem="iZO-3b-YU4" secondAttribute="trailing" constant="8" id="rl3-eq-E1y"/>
+                <constraint firstItem="JLu-EY-vtI" firstAttribute="top" secondItem="9KL-V9-hR2" secondAttribute="top" id="zzO-Er-l63"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="724" y="416"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="popup_triangle" width="20" height="13"/>
+    </resources>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DriverTableCell" rowHeight="92" id="KGk-i7-Jjw" customClass="DriverTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车牌号码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dm-u3-IrG">
+                        <rect key="frame" x="16" y="8" width="120" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="PvT-Om-gQK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="司机姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEA-8w-Twt">
+                        <rect key="frame" x="16" y="55" width="80" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="0uU-Ju-BuA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-z9-17w">
+                        <rect key="frame" x="104" y="55" width="110" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="6Kj-pA-ojU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXL-93-Sxk">
+                        <rect key="frame" x="280" y="24" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="L2W-id-nGV"/>
+                            <constraint firstAttribute="width" constant="32" id="fAW-E6-vuN"/>
+                        </constraints>
+                        <state key="normal" image="btn_add">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车辆类型" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVh-CL-n9d">
+                        <rect key="frame" x="16" y="32" width="240" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="240" id="0Pi-Py-bQX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lVh-CL-n9d" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="D9P-DI-aZI"/>
+                    <constraint firstAttribute="bottom" secondItem="hUa-z9-17w" secondAttribute="bottom" constant="8" id="Fm9-h4-vtV"/>
+                    <constraint firstItem="iEA-8w-Twt" firstAttribute="leading" secondItem="lVh-CL-n9d" secondAttribute="leading" id="OOv-dU-rQY"/>
+                    <constraint firstItem="gXL-93-Sxk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Pzv-ZI-HP0"/>
+                    <constraint firstItem="lVh-CL-n9d" firstAttribute="leading" secondItem="2Dm-u3-IrG" secondAttribute="leading" id="TYD-zs-e3p"/>
+                    <constraint firstItem="2Dm-u3-IrG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="YP0-2l-bbI"/>
+                    <constraint firstItem="2Dm-u3-IrG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Zk3-LZ-zP5"/>
+                    <constraint firstItem="hUa-z9-17w" firstAttribute="leading" secondItem="iEA-8w-Twt" secondAttribute="trailing" constant="8" id="cuR-Sc-BWH"/>
+                    <constraint firstAttribute="bottom" secondItem="iEA-8w-Twt" secondAttribute="bottom" constant="8" id="i4F-Vs-dbK"/>
+                    <constraint firstAttribute="trailing" secondItem="gXL-93-Sxk" secondAttribute="trailing" constant="8" id="rXM-vR-Dn1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnAdd" destination="gXL-93-Sxk" id="YoT-7T-jNW"/>
+                <outlet property="lbCarNum" destination="2Dm-u3-IrG" id="CS5-ki-xLu"/>
+                <outlet property="lbCarType" destination="lVh-CL-n9d" id="KkZ-Ip-F6V"/>
+                <outlet property="lbDriverName" destination="iEA-8w-Twt" id="PTA-nd-DOu"/>
+                <outlet property="lbDriverPhone" destination="hUa-z9-17w" id="9DZ-CK-paP"/>
+            </connections>
+            <point key="canvasLocation" x="242" y="204"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_add" width="32" height="32"/>
+    </resources>
+</document>

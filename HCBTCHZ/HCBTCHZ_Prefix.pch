@@ -1,0 +1,71 @@
+//
+//  HCBTCSJ_Prefix.pch
+//  HCBTCSJ
+//
+//  Created by itte on 16/2/22.
+//  Copyright © 2016年 itte. All rights reserved.
+//
+
+#ifndef HCBTCSJ_Prefix_pch
+#define HCBTCSJ_Prefix_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "URLConstants.h"
+#import "DataModels.h"
+#import "NSString+More.h"
+#import "UIView+RGSize.h"
+#import "TimeUtils.h"
+#import <BlocksKit/BlocksKit.h>
+#import <BlocksKit+UIKit.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "UITextView+PlaceHolder.h"
+#import "AFNetworkManager.h"
+#import "Login.h"
+
+
+/**∫
+ *  重新定义NSLog
+ */
+#define __NSLog(s, ...) do { \
+NSLog(@"[%@(%d)] %@",[[NSString stringWithUTF8String:__FILE__] lastPathComponent],__LINE__,[NSString stringWithFormat:(s), ##__VA_ARGS__]); \
+} while (0)
+#define NSLog(...) __NSLog(__VA_ARGS__)
+
+/**
+ *  判断设备的相关参数
+ */
+#pragma mark - Device
+
+#define IOS7                    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) //是否是IOS7
+#define SCREEN_WIDTH            ([UIScreen mainScreen].bounds.size.width) //屏幕的宽度
+#define SCREEN_HEIGHT           ([UIScreen mainScreen].bounds.size.height)//屏幕的高度
+
+
+/**
+ * 颜色相关
+ */
+#define RGB(r, g, b)                    [UIColor colorWithRed:r / 255.0f green:g / 255.0f blue:b / 255.0f alpha:1.0f]
+#define RGBA(r, g, b, a)                [UIColor colorWithRed:r / 255.0f green:g / 255.0f blue:b / 255.0f alpha:a]
+
+
+#define KNavigationBarColor       RGB(255, 124, 60)
+
+/**
+ *  定义通知
+ */
+#pragma mark - Notification Name
+#define kNotificationLoginSuccess           @"HCBNotificationLoginSuccess"              //登录成功通知
+
+/**
+ *  注册通知与发送通知
+ */
+#pragma mark - Notification
+
+#define addNObserver(_selector,_name) ([[NSNotificationCenter defaultCenter] addObserver:self selector:_selector name:_name object:nil])
+#define removeNObserver(_name) ([[NSNotificationCenter defaultCenter] removeObserver:self name:_name object:nil])
+#define postN(_name) ([[NSNotificationCenter defaultCenter] postNotificationName:_name object:nil userInfo:nil])
+#define postNWithInfo(_name,_info) ([[NSNotificationCenter defaultCenter] postNotificationName:_name object:nil userInfo:_info])
+
+
+#endif /* HCBTCSJ_Prefix_pch */

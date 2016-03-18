@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCELL" id="gTV-IL-0wX" customClass="GoodsDescCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="par-sm-bPj">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+                        <state key="normal" title="Button"/>
+                        <state key="selected" backgroundImage="btnOrange"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="par-sm-bPj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="giZ-lE-lm0"/>
+                <constraint firstItem="par-sm-bPj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tt8-ij-sjW"/>
+                <constraint firstAttribute="bottom" secondItem="par-sm-bPj" secondAttribute="bottom" id="wi7-ze-dLs"/>
+                <constraint firstAttribute="trailing" secondItem="par-sm-bPj" secondAttribute="trailing" id="yHi-Nj-Rb5"/>
+            </constraints>
+            <size key="customSize" width="178" height="50"/>
+            <connections>
+                <outlet property="btnTitle" destination="par-sm-bPj" id="EKH-Rb-iG7"/>
+            </connections>
+            <point key="canvasLocation" x="533" y="374"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="btnOrange" width="106" height="32"/>
+    </resources>
+</document>
